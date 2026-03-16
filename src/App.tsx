@@ -2,12 +2,20 @@ import { useState, useRef } from "react";
 import { tiles, allBosses } from "./data/tiles";
 import { STORAGE_KEYS } from "./types";
 import { useLocalStorage } from "./hooks/useLocalStorage";
+import { useIsMobile } from "./hooks/useIsMobile";
 import { Sidebar } from "./components/Sidebar";
 import { Board } from "./components/Board";
+import { ListView } from "./components/ListView";
+import { MobileListView } from "./components/MobileListView";
 import { TileModal } from "./components/TileModal";
+import type { ViewMode } from "./components/ViewToggle";
 import type { Tile } from "./types";
 
+const allTileIds = tiles.map((t) => t.id);
+
 function App() {
+  const isMobile = useIsMobile();
+
   const [completedTileIdsArray, setCompletedTileIdsArray] = useLocalStorage<string[]>(
     STORAGE_KEYS.completedTiles,
     []
@@ -16,18 +24,11 @@ function App() {
     STORAGE_KEYS.selectedBosses,
     []
   );
+  const [view, setView] = useState<ViewMode>(() =>
+    window.matchMedia("(max-width: 768px)").matches ? "list" : "board"
+  );
   const [activeTile, setActiveTile] = useState<Tile | null>(null);
   const lastClickedTileRef = useRef<HTMLElement | null>(null);
-
-  function openTile(tile: Tile) {
-    lastClickedTileRef.current = document.activeElement as HTMLElement;
-    setActiveTile(tile);
-  }
-
-  function closeTile() {
-    setActiveTile(null);
-    lastClickedTileRef.current?.focus();
-  }
 
   const completedTileIds = new Set(completedTileIdsArray);
   const completedTiles = tiles.filter((t) => completedTileIds.has(t.id));
@@ -57,6 +58,20 @@ function App() {
     }
   }
 
+  function handleImport(ids: string[]) {
+    setCompletedTileIdsArray(ids);
+  }
+
+  function openTile(tile: Tile) {
+    lastClickedTileRef.current = document.activeElement as HTMLElement;
+    setActiveTile(tile);
+  }
+
+  function closeTile() {
+    setActiveTile(null);
+    lastClickedTileRef.current?.focus();
+  }
+
   const hasFilters = selectedBosses.length > 0;
   const highlightedIds = hasFilters
     ? new Set(
@@ -66,6 +81,39 @@ function App() {
       )
     : new Set<string>();
 
+  const sharedBoardProps = {
+    tiles,
+    completedTileIds,
+    highlightedIds,
+    hasFilters,
+    onToggleTile: toggleTile,
+    onTileClick: openTile,
+  };
+
+  // Mobile list view: single-column layout, no separate sidebar
+  if (isMobile && view === "list") {
+    return (
+      <>
+        <MobileListView
+          {...sharedBoardProps}
+          completedTiles={completedTiles}
+          totalTiles={tiles.length}
+          allBosses={allBosses}
+          selectedBosses={selectedBosses}
+          view={view}
+          onToggleBoss={toggleBoss}
+          onClearFilters={clearFilters}
+          onResetProgress={resetProgress}
+          onViewChange={setView}
+          onImport={handleImport}
+          allTileIds={allTileIds}
+          completedTileIdsArray={completedTileIdsArray}
+        />
+        <TileModal tile={activeTile} onClose={closeTile} />
+      </>
+    );
+  }
+
   return (
     <div className="app-layout">
       <Sidebar
@@ -73,18 +121,20 @@ function App() {
         totalTiles={tiles.length}
         allBosses={allBosses}
         selectedBosses={selectedBosses}
+        completedTileIds={completedTileIdsArray}
+        allTileIds={allTileIds}
+        view={view}
         onToggleBoss={toggleBoss}
         onClearFilters={clearFilters}
         onResetProgress={resetProgress}
+        onImport={handleImport}
+        onViewChange={setView}
       />
-      <Board
-        tiles={tiles}
-        completedTileIds={completedTileIds}
-        highlightedIds={highlightedIds}
-        hasFilters={hasFilters}
-        onToggleTile={toggleTile}
-        onTileClick={openTile}
-      />
+      {view === "board" ? (
+        <Board {...sharedBoardProps} />
+      ) : (
+        <ListView {...sharedBoardProps} />
+      )}
       <TileModal tile={activeTile} onClose={closeTile} />
     </div>
   );
