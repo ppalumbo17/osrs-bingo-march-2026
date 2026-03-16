@@ -34,8 +34,8 @@ Update the file after completing each sub-task, not just after completing an ent
 
 ## Tasks
 
-- [ ] 0.0 Create feature branch
-  - [ ] 0.1 Create and checkout a new branch for this feature (e.g., `git checkout -b feature/osrs-bingo-browser-app`)
+- [x] 0.0 Create feature branch
+  - [x] 0.1 Create and checkout a new branch for this feature (e.g., `git checkout -b feature/osrs-bingo-browser-app`)
 
 - [ ] 1.0 Project scaffold and data setup
   - [ ] 1.1 Initialise a new React + Vite + TypeScript project in the repository root (e.g., `npm create vite@latest . -- --template react-ts`)
