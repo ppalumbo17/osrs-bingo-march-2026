@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { TierSection } from "./TierSection";
 import { TIERS } from "./PointsLegend";
 import { ViewToggle } from "./ViewToggle";
