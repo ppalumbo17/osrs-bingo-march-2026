@@ -1,0 +1,1378 @@
+[
+  {
+    "XCell": 0,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Scurrius"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Scurrius"
+    ],
+    "CellContent": "Scurius Spine Drop",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Scurrius_spine"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Shellbane Gryphon"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Shellbane_Gryphon"
+    ],
+    "CellContent": "Featherweight Fighter CA",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Featherweight_Fighter"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 2,
+    "YCell": 0,
+    "RelatedBosses": [],
+    "RelatedBossesLinks": [],
+    "CellContent": "Achieve 100th Killcount for any boss",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Boss"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 3,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Mimic"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Mimic"
+    ],
+    "CellContent": "1KC Mimic",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Mimic"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 4,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Scorpia"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Scorpia"
+    ],
+    "CellContent": "1KC Scorpia",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Scorpia"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 5,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Blood Moon",
+      "Blue Moon",
+      "Eclipse Moon"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Blood_Moon",
+      "https://oldschool.runescape.wiki/w/Blue_Moon",
+      "https://oldschool.runescape.wiki/w/Eclipse_Moon"
+    ],
+    "CellContent": "1 KC Lunar Chest",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Lunar_Chest"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 6,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Ahrim the Blighted",
+      "Dharok the Wretched",
+      "Guthan the Infested",
+      "Karil the Tainted",
+      "Torag the Corrupted",
+      "Verac the Defiled"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Ahrim_the_Blighted",
+      "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+      "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+      "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
+      "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
+      "https://oldschool.runescape.wiki/w/Verac_the_Defiled"
+    ],
+    "CellContent": "Faithless Crypt Run CA",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Faithless_Crypt_Run"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 7,
+    "YCell": 0,
+    "RelatedBosses": [
+      "General Graardor",
+      "K'ril Tsutsaroth"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/General_Graardor",
+      "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+    ],
+    "CellContent": "1 KC Bandos AND 1 KC K'ril Tsutsaroth (Collective Screenshot)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/General_Graardor",
+      "https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 8,
+    "YCell": 0,
+    "RelatedBosses": [
+      "Commander Zilyana",
+      "Kree'arra"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+      "https://oldschool.runescape.wiki/w/Kree%27arra"
+    ],
+    "CellContent": "1 KC Zilyana AND 1KC Kree'ara (Collective Screenshot)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Commander_Zilyana",
+      "https://oldschool.runescape.wiki/w/Kree%27arra"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Ahrim the Blighted",
+      "Dharok the Wretched",
+      "Guthan the Infested",
+      "Karil the Tainted",
+      "Torag the Corrupted",
+      "Verac the Defiled"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Ahrim_the_Blighted",
+      "https://oldschool.runescape.wiki/w/Dharok_the_Wretched",
+      "https://oldschool.runescape.wiki/w/Guthan_the_Infested",
+      "https://oldschool.runescape.wiki/w/Karil_the_Tainted",
+      "https://oldschool.runescape.wiki/w/Torag_the_Corrupted",
+      "https://oldschool.runescape.wiki/w/Verac_the_Defiled"
+    ],
+    "CellContent": "1 Kc Barrows Chest",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Barrows_chest"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 1,
+    "RelatedBosses": [
+      "TzTok-Jad"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/TzTok-Jad"
+    ],
+    "CellContent": "Pick 1: Firecape OR Denying the Healers OR Denying the Healers II *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Fire_cape",
+      "https://oldschool.runescape.wiki/w/Denying_the_Healers",
+      "https://oldschool.runescape.wiki/w/Denying_the_Healers_II"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Crystalline Hunllef"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Crystalline_Hunllef"
+    ],
+    "CellContent": "First Corrupted Gauntlet Cape OR Normal Gauntlet under 5mins",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Corrupted_gauntlet_cape",
+      "https://oldschool.runescape.wiki/w/The_Gauntlet"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 3,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Tombs of Amascut"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Tombs_of_Amascut"
+    ],
+    "CellContent": "First Masori Kit OR But..Damage CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Masori_crafting_kit",
+      "https://oldschool.runescape.wiki/w/But..._Damage"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 4,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Corporeal Beast"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Corporeal_Beast"
+    ],
+    "CellContent": "Chicken Killer CA OR Finding Weak Spot CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Chicken_Killer",
+      "https://oldschool.runescape.wiki/w/Finding_the_Weak_Spot"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 5,
+    "YCell": 1,
+    "RelatedBosses": [
+      "JalTok-Jad",
+      "TzKal-Zuk"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/JalTok-Jad",
+      "https://oldschool.runescape.wiki/w/TzKal-Zuk"
+    ],
+    "CellContent": "Halfway There CA OR The II Jad Challenge CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Half-Way_There",
+      "https://oldschool.runescape.wiki/w/The_II_Jad_Challenge"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 6,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Tormented Demon"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Tormented_Demon"
+    ],
+    "CellContent": "The Worst Ranged Weapon CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/The_Worst_Ranged_Weapon"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 7,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Vorkath"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Vorkath"
+    ],
+    "CellContent": "Any: Vorkaths Head, Fremennik Way CA, Dodging the Dragon *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Vorkath%27s_head",
+      "https://oldschool.runescape.wiki/w/The_Fremennik_Way",
+      "https://oldschool.runescape.wiki/w/Dodging_the_Dragon"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 1,
+    "RelatedBosses": [
+      "Tempoross",
+      "Wintertodt"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Tempoross",
+      "https://oldschool.runescape.wiki/w/Wintertodt"
+    ],
+    "CellContent": "Why Cook? OR Why Fletch?",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Why_Cook%3F",
+      "https://oldschool.runescape.wiki/w/Why_Fletch%3F"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Calvar'ion",
+      "Vet'ion"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Calvar%27ion",
+      "https://oldschool.runescape.wiki/w/Vet%27ion"
+    ],
+    "CellContent": "1KC Calvarion/Vetion",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Calvar%27ion",
+      "https://oldschool.runescape.wiki/w/Vet%27ion"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Akkha",
+      "Ba-Ba",
+      "Kephri",
+      "Zebak",
+      "The Wardens"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Akkha",
+      "https://oldschool.runescape.wiki/w/Ba-Ba",
+      "https://oldschool.runescape.wiki/w/Kephri",
+      "https://oldschool.runescape.wiki/w/Zebak",
+      "https://oldschool.runescape.wiki/w/The_Wardens"
+    ],
+    "CellContent": "Undying Raid Team OR Helpful spirit who? *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Undying_Raid_Team",
+      "https://oldschool.runescape.wiki/w/Helpful_spirit_who%3F"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Zulrah",
+      "The Leviathan"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah",
+      "https://oldschool.runescape.wiki/w/The_Leviathan"
+    ],
+    "CellContent": "Serpentine Solo OR Unconventional CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Serpentine_Solo",
+      "https://oldschool.runescape.wiki/w/Unconventional"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 3,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Doom of Mokhaiotl"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl"
+    ],
+    "CellContent": "Doom Veteran CA OR It's Dark Down Here CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Doom_Veteran",
+      "https://oldschool.runescape.wiki/w/It%27s_Dark_Down_Here"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 4,
+    "YCell": 2,
+    "RelatedBosses": [
+      "The Nightmare",
+      "Phosani's Nightmare"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Nightmare",
+      "https://oldschool.runescape.wiki/w/Phosani%27s_Nightmare"
+    ],
+    "CellContent": "Two Times the Torment OR Three Times the Thrashing *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Two_Times_the_Torment",
+      "https://oldschool.runescape.wiki/w/Three_Times_the_Thrashing"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 5,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Great Olm",
+      "Verzik Vitur",
+      "The Wardens"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Great_Olm",
+      "https://oldschool.runescape.wiki/w/Verzik_Vitur",
+      "https://oldschool.runescape.wiki/w/The_Wardens"
+    ],
+    "CellContent": "Ancestral kit / Any Scythe kit / Any dust / Any Transmog",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Ancestral_robe_set",
+      "https://oldschool.runescape.wiki/w/Sanguine_ornament_kit",
+      "https://oldschool.runescape.wiki/w/Holy_ornament_kit",
+      "https://oldschool.runescape.wiki/w/Metamorphic_dust",
+      "https://oldschool.runescape.wiki/w/Olmlet",
+      "https://oldschool.runescape.wiki/w/Lil%27_zik",
+      "https://oldschool.runescape.wiki/w/Tumeken%27s_guardian"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 6,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Duke Sucellus"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Duke_Sucellus"
+    ],
+    "CellContent": "Perfect Duke Sucellus OR Cold Feet CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Perfect_Duke_Sucellus",
+      "https://oldschool.runescape.wiki/w/Cold_Feet"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 7,
+    "YCell": 2,
+    "RelatedBosses": [
+      "Commander Zilyana"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Commander_Zilyana"
+    ],
+    "CellContent": "Reminisce CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Reminisce"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 2,
+    "RelatedBosses": [
+      ""
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Verzik_Vitur"
+    ],
+    "CellContent": "Entry Tob Or higher KC",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Theatre_of_Blood"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Artio",
+      "Callisto"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Artio",
+      "https://oldschool.runescape.wiki/w/Callisto"
+    ],
+    "CellContent": "1KC Artio/Callisto",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Artio",
+      "https://oldschool.runescape.wiki/w/Callisto"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Akkha",
+      "Ba-Ba",
+      "Kephri",
+      "Zebak",
+      "The Wardens"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Akkha",
+      "https://oldschool.runescape.wiki/w/Ba-Ba",
+      "https://oldschool.runescape.wiki/w/Kephri",
+      "https://oldschool.runescape.wiki/w/Zebak",
+      "https://oldschool.runescape.wiki/w/Tumeken%27s_Warden"
+    ],
+    "CellContent": "ANY: Any 'Perfect ___' in TOA",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Perfection_of_Het",
+      "https://oldschool.runescape.wiki/w/Perfection_of_Crondis",
+      "https://oldschool.runescape.wiki/w/Perfection_of_Apmeken",
+      "https://oldschool.runescape.wiki/w/Perfection_of_Scabaras",
+      "https://oldschool.runescape.wiki/w/Perfect_Wardens"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Phantom Muspah",
+      "Guardian of the Rift"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Phantom_Muspah",
+      "https://oldschool.runescape.wiki/w/Guardians_of_the_Rift"
+    ],
+    "CellContent": "More than just a ranged weapon OR Essence Farmer",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/More_than_just_a_ranged_weapon",
+      "https://oldschool.runescape.wiki/w/Essence_Farmer"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 3,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Duke Sucellus",
+      "The Leviathan",
+      "The Whisperer",
+      "Vardorvis"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Duke_Sucellus",
+      "https://oldschool.runescape.wiki/w/The_Leviathan",
+      "https://oldschool.runescape.wiki/w/The_Whisperer",
+      "https://oldschool.runescape.wiki/w/Vardorvis"
+    ],
+    "CellContent": "First time ALL awakened bosses IF Ankd (has to be PB+)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Awakener%27s_orb"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 4,
+    "YCell": 3,
+    "RelatedBosses": [
+      "TzKal-Zuk"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/TzKal-Zuk"
+    ],
+    "CellContent": "First Inferno Cape OR Floor Is Lava CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Infernal_cape",
+      "https://oldschool.runescape.wiki/w/The_Floor_Is_Lava"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 5,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Verzik Vitur",
+      "Great Olm",
+      "The Wardens"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Verzik_Vitur",
+      "https://oldschool.runescape.wiki/w/Great_Olm",
+      "https://oldschool.runescape.wiki/w/Tumeken%27s_Warden"
+    ],
+    "CellContent": "TOB/COX/TOA Master/GM Time CA (Not SOLO)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Theatre_of_Blood",
+      "https://oldschool.runescape.wiki/w/Chambers_of_Xeric",
+      "https://oldschool.runescape.wiki/w/Tombs_of_Amascut"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 6,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Duke Sucellus"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Duke_Sucellus"
+    ],
+    "CellContent": "Mirror Image CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Mirror_Image"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 7,
+    "YCell": 3,
+    "RelatedBosses": [
+      "Tormented Demon",
+      "Skotizo"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Tormented_Demon",
+      "https://oldschool.runescape.wiki/w/Skotizo"
+    ],
+    "CellContent": "The Bane of Demons CA OR Ash Collector *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/The_Bane_of_Demons",
+      "https://oldschool.runescape.wiki/w/Ash_Collector"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 3,
+    "RelatedBosses": [
+      "The Wardens"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Wardens"
+    ],
+    "CellContent": "50 Invo ToA Or Higher KC",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Tombs_of_Amascut"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Spindel",
+      "Venenatis"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Spindel",
+      "https://oldschool.runescape.wiki/w/Venenatis"
+    ],
+    "CellContent": "1KC Spindel/Venenatis",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Spindel",
+      "https://oldschool.runescape.wiki/w/Venenatis"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Phantom Muspah"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Phantom_Muspah"
+    ],
+    "CellContent": "Versatile Drainer OR Can't Escape *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Versatile_Drainer",
+      "https://oldschool.runescape.wiki/w/Can%27t_Escape"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 4,
+    "RelatedBosses": [
+      "The Nightmare"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Nightmare"
+    ],
+    "CellContent": "ANY: 'Sleep Tight' A Long Trip, Perfect Nightmare *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Sleep_Tight",
+      "https://oldschool.runescape.wiki/w/A_Long_Trip",
+      "https://oldschool.runescape.wiki/w/Perfect_Nightmare"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 3,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Doom of Mokhaiotl"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl"
+    ],
+    "CellContent": "Perfect Doom CA *R OR Delve 25 Cleared",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Perfect_Doom",
+      "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 4,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Hespori"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Hespori"
+    ],
+    "CellContent": "--- Fastest Hespori --- Top 5 Claims the tile (NO MEGARARES)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Hespori"
+    ],
+    "Points": 30
+  },
+  {
+    "XCell": 5,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Yama"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Yama"
+    ],
+    "CellContent": "All Radiant Pieces",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Radiant_oathplate_helm",
+      "https://oldschool.runescape.wiki/w/Radiant_oathplate_chest",
+      "https://oldschool.runescape.wiki/w/Radiant_oathplate_legs"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 6,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Zulrah"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah"
+    ],
+    "CellContent": "Zulrah Below 1 minute",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 7,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Araxxor",
+      "Phantom Muspah"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Araxxor",
+      "https://oldschool.runescape.wiki/w/Phantom_Muspah"
+    ],
+    "CellContent": "Araxxor OR Muspah Transmog Times",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Coagulated_venom",
+      "https://oldschool.runescape.wiki/w/Muphin"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 4,
+    "RelatedBosses": [
+      "Skotizo"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Skotizo"
+    ],
+    "CellContent": "1 KC Skotizo",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Skotizo"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 5,
+    "RelatedBosses": [
+      "Royal Titans",
+      "Great Olm"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Royal_Titans",
+      "https://oldschool.runescape.wiki/w/Great_Olm"
+    ],
+    "CellContent": "Acquire any Prayer Scroll (Titans or Cox)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Arcane_prayer_scroll",
+      "https://oldschool.runescape.wiki/w/Dexterous_prayer_scroll",
+      "https://oldschool.runescape.wiki/w/Deadeye_prayer_scroll",
+      "https://oldschool.runescape.wiki/w/Mystic_vigour_scroll"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 5,
+    "RelatedBosses": [
+      "Sol Heredit"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Sol_Heredit"
+    ],
+    "CellContent": "Furball OR I was here first! CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Furball",
+      "https://oldschool.runescape.wiki/w/I_was_here_first!"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 5,
+    "RelatedBosses": [
+      "Vardorvis",
+      "Brutus"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Vardorvis",
+      "https://oldschool.runescape.wiki/w/Brutus"
+    ],
+    "CellContent": "Axe Enthusiast CA OR Demonic Cow Slippers *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Axe_Enthusiast",
+      "https://oldschool.runescape.wiki/w/Demonic_Brutus"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 3,
+    "YCell": 5,
+    "RelatedBosses": [
+      "The Wardens"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Wardens"
+    ],
+    "CellContent": "SOLO First Fang KIT OR Maybe I'm the Boss CA",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Cursed_phalanx",
+      "https://oldschool.runescape.wiki/w/Maybe_I%27m_the_boss."
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 4,
+    "YCell": 5,
+    "RelatedBosses": [
+      "Sol Heredit"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Sol_Heredit"
+    ],
+    "CellContent": "Any: First Quiver, Slow Dancing in the Sand, Reinforcements CA's",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Dizana%27s_quiver",
+      "https://oldschool.runescape.wiki/w/Slow_Dancing_in_the_Sand",
+      "https://oldschool.runescape.wiki/w/Reinforcements"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 5,
+    "YCell": 5,
+    "RelatedBosses": [
+      "JalTok-Jad",
+      "TzKal-Zuk"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/JalTok-Jad",
+      "https://oldschool.runescape.wiki/w/TzKal-Zuk"
+    ],
+    "CellContent": "It wasn’t a fluke CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/It_Wasn%27t_a_Fluke"
+    ],
+    "Points": 12
+  },
+  {
+    "XCell": 6,
+    "YCell": 5,
+    "RelatedBosses": [
+      "The Whisperer"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Whisperer"
+    ],
+    "CellContent": "Dark Memories CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Dark_Memories"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 7,
+    "YCell": 5,
+    "RelatedBosses": [
+      "Dagannoth Prime",
+      "Dagannoth Rex",
+      "Dagannoth Supreme"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+    ],
+    "CellContent": "ANY CA: Toppling the Diarchy, From One King to Another, Rapid Succession *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Toppling_the_Diarchy",
+      "https://oldschool.runescape.wiki/w/From_One_King_to_Another",
+      "https://oldschool.runescape.wiki/w/Rapid_Succession"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 5,
+    "RelatedBosses": [
+      "Dagannoth Prime",
+      "Dagannoth Rex",
+      "Dagannoth Supreme"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+    ],
+    "CellContent": "Kill Rex/Prime/Supreme once (Collective Screenshot)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Dagannoth_Prime",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Rex",
+      "https://oldschool.runescape.wiki/w/Dagannoth_Supreme"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Zalcano"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Zalcano"
+    ],
+    "CellContent": "Get infernal Ashes From Zalcano",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Zalcano",
+      "https://oldschool.runescape.wiki/w/Infernal_ashes"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Doom of Mokhaiotl"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Doom_of_Mokhaiotl"
+    ],
+    "CellContent": "Doom Adept OR Doom Crawler CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Doom_Adept",
+      "https://oldschool.runescape.wiki/w/Doom_Crawler"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Vardorvis"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Vardorvis"
+    ],
+    "CellContent": "Budget Cutter OR Perfect Vardorvis *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Budget_Cutter",
+      "https://oldschool.runescape.wiki/w/Perfect_Vardorvis"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 3,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Tombs of Amascut",
+      "Kephri"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Tombs_of_Amascut",
+      "https://oldschool.runescape.wiki/w/Kephri"
+    ],
+    "CellContent": "ANY: First Ward Kit, Fancy Feet, Doesn't Bug me.",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Elidinis%27_ward_(or)",
+      "https://oldschool.runescape.wiki/w/Fancy_feet",
+      "https://oldschool.runescape.wiki/w/Doesn%27t_bug_me"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 4,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Great Olm"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Great_Olm"
+    ],
+    "CellContent": "Any: Immortal Raider, Undying Raider OR Perfect Olm any size",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Immortal_Raider",
+      "https://oldschool.runescape.wiki/w/Undying_Raider",
+      "https://oldschool.runescape.wiki/w/Perfect_Olm_(Solo)"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 5,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Great Olm",
+      "Verzik Vitur"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Great_Olm",
+      "https://oldschool.runescape.wiki/w/Verzik_Vitur"
+    ],
+    "CellContent": "Any: Hard mode? Completed it, Dust seeker, Resourceful Raider *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Hard_Mode%3F_Completed_It",
+      "https://oldschool.runescape.wiki/w/Dust_Seeker",
+      "https://oldschool.runescape.wiki/w/Resourceful_Raider"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 6,
+    "YCell": 6,
+    "RelatedBosses": [
+      "The Whisperer"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Whisperer"
+    ],
+    "CellContent": "Tentacular or Perfect Whisperer CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Tentacular",
+      "https://oldschool.runescape.wiki/w/Perfect_Whisperer"
+    ],
+    "Points": 8
+  },
+  {
+    "XCell": 7,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Royal Titans"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Royal_Titans"
+    ],
+    "CellContent": "No Time to pray CA *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/No_time_to_pray"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 6,
+    "RelatedBosses": [
+      "Royal Titans"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Royal_Titans"
+    ],
+    "CellContent": "Kill Royal Titans Solo",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Royal_Titans"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Gemstone Crab"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Gemstone_Crab"
+    ],
+    "CellContent": "Achieve top 16 for Gemstone Crab (Able to mine it)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Gemstone_Crab"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Yama"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Yama"
+    ],
+    "CellContent": "Kill Yama Solo",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Yama"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 2,
+    "YCell": 7,
+    "RelatedBosses": [
+      "The Wardens",
+      "Commander Zilyana"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/The_Wardens",
+      "https://oldschool.runescape.wiki/w/Commander_Zilyana"
+    ],
+    "CellContent": "ANY: Defence Doesn’t Matter, Defence Doesn’t Matter II, Wolf Puncher, Wolf Puncher II *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Defence_Doesn%27t_Matter",
+      "https://oldschool.runescape.wiki/w/Defence_Doesn%27t_Matter_II",
+      "https://oldschool.runescape.wiki/w/Wolf_Puncher",
+      "https://oldschool.runescape.wiki/w/Wolf_Puncher_II"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 3,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Kalphite Queen"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Kalphite_Queen"
+    ],
+    "CellContent": "Insect Deflection OR Prayer Smasher OR KQ Head *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Insect_Deflection",
+      "https://oldschool.runescape.wiki/w/Prayer_Smasher",
+      "https://oldschool.runescape.wiki/w/Kalphite_queen_head"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 4,
+    "YCell": 7,
+    "RelatedBosses": [
+      "TzKal-Zuk"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/TzKal-Zuk"
+    ],
+    "CellContent": "TzHaar-Ket-Rak's Speed-Trialist *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/TzHaar-Ket-Rak%27s_Speed-Trialist"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 5,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Hueycoatl"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Hueycoatl"
+    ],
+    "CellContent": "ANY CA: I'm your son,Hueycoatl Speed-Chaser,Hueycoatl Speed-Runner *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/I%27m_your_son",
+      "https://oldschool.runescape.wiki/w/Hueycoatl_Speed-Chaser",
+      "https://oldschool.runescape.wiki/w/Hueycoatl_Speed-Runner"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 6,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Fragment of Seren",
+      "Galvek"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Fragment_of_Seren",
+      "https://oldschool.runescape.wiki/w/Galvek"
+    ],
+    "CellContent": "Fragment of Seren Speed-Trialist OR Galvek Speed-Trialist *R",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Fragment_of_Seren_Speed-Trialist",
+      "https://oldschool.runescape.wiki/w/Galvek_Speed-Trialist"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 7,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Zulrah"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah"
+    ],
+    "CellContent": "Zulrah below 1:30",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah"
+    ],
+    "Points": 4
+  },
+  {
+    "XCell": 8,
+    "YCell": 7,
+    "RelatedBosses": [
+      "Zulrah"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah"
+    ],
+    "CellContent": "Zulrah 1KC",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Zulrah"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 0,
+    "YCell": 8,
+    "RelatedBosses": [
+      "Brutal black dragon"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Brutal_black_dragon"
+    ],
+    "CellContent": "Kill Brutal Black Dragon",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Brutal_black_dragon"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 1,
+    "YCell": 8,
+    "RelatedBosses": [
+      "Yama"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Yama"
+    ],
+    "CellContent": "Kill Yama Duo",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Yama"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 2,
+    "YCell": 8,
+    "RelatedBosses": [],
+    "RelatedBossesLinks": [],
+    "CellContent": "Kill superior slayer monster",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Superior_slayer_monster"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 3,
+    "YCell": 8,
+    "RelatedBosses": [],
+    "RelatedBossesLinks": [],
+    "CellContent": "Complete any slayer task",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Slayer"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 4,
+    "YCell": 8,
+    "RelatedBosses": [],
+    "RelatedBossesLinks": [],
+    "CellContent": "Any Diary Achievement Completion (Does not matter what tier)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Achievement_Diary"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 5,
+    "YCell": 8,
+    "RelatedBosses": [
+      "Deranged Archaeologist",
+      "Crazy archaeologist"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Deranged_Archaeologist",
+      "https://oldschool.runescape.wiki/w/Crazy_archaeologist"
+    ],
+    "CellContent": "Deranged Archaeologist 1 KC Or Crazy Archaeologist 1 KC",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Deranged_Archaeologist",
+      "https://oldschool.runescape.wiki/w/Crazy_archaeologist"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 6,
+    "YCell": 8,
+    "RelatedBosses": [
+      "Sarachnis",
+      "Giant Mole"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Sarachnis",
+      "https://oldschool.runescape.wiki/w/Giant_Mole"
+    ],
+    "CellContent": "Kill Sarachnis ANDMole (Collective Screenshot)",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Sarachnis",
+      "https://oldschool.runescape.wiki/w/Giant_Mole"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 7,
+    "YCell": 8,
+    "RelatedBosses": [
+      "Brutus"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Brutus"
+    ],
+    "CellContent": "Brutus 0:02 Kill",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Brutus"
+    ],
+    "Points": 1
+  },
+  {
+    "XCell": 8,
+    "YCell": 8,
+    "RelatedBosses": [
+      "Amoxliatl"
+    ],
+    "RelatedBossesLinks": [
+      "https://oldschool.runescape.wiki/w/Amoxliatl"
+    ],
+    "CellContent": "Nagua Negotion",
+    "CellLinks": [
+      "https://oldschool.runescape.wiki/w/Nagua_Negation"
+    ],
+    "Points": 1
+  }
+]
