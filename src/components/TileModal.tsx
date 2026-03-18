@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LinkSection } from "./LinkSection";
 import type { Tile } from "../types";
 
 type TileModalProps = {
   tile: Tile | null;
+  priorityNumber: number | null;
+  onSetPriority: (priority: number | null) => void;
   onClose: () => void;
 };
 
@@ -17,9 +19,15 @@ function labelFromUrl(url: string): string {
   }
 }
 
-export function TileModal({ tile, onClose }: TileModalProps) {
+export function TileModal({ tile, priorityNumber, onSetPriority, onClose }: TileModalProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  const [inputValue, setInputValue] = useState("");
+
+  // Sync input when tile changes
+  useEffect(() => {
+    setInputValue(priorityNumber != null ? String(priorityNumber) : "");
+  }, [tile, priorityNumber]);
 
   // Focus the close button when the modal opens
   useEffect(() => {
@@ -79,6 +87,16 @@ export function TileModal({ tile, onClose }: TileModalProps) {
     url,
   }));
 
+  function handlePriorityChange(raw: string) {
+    setInputValue(raw);
+    const n = parseInt(raw, 10);
+    if (raw === "") {
+      onSetPriority(null);
+    } else if (!isNaN(n) && n > 0) {
+      onSetPriority(n);
+    }
+  }
+
   return (
     <div
       className="modal-backdrop"
@@ -108,6 +126,29 @@ export function TileModal({ tile, onClose }: TileModalProps) {
         </div>
 
         <div className="modal-body">
+          <div className="modal-priority-row">
+            <label className="modal-priority-label" htmlFor="tile-priority-input">
+              Priority #
+            </label>
+            <input
+              id="tile-priority-input"
+              className="modal-priority-input"
+              type="number"
+              min="1"
+              placeholder="—"
+              value={inputValue}
+              onChange={(e) => handlePriorityChange(e.target.value)}
+            />
+            {priorityNumber != null && (
+              <button
+                className="modal-priority-clear"
+                onClick={() => { setInputValue(""); onSetPriority(null); }}
+                aria-label="Clear priority"
+              >
+                ✕
+              </button>
+            )}
+          </div>
           <LinkSection icon="⚔️" title="Bosses" items={bossItems} />
           <LinkSection icon="🎒" title="Items &amp; Achievements" items={cellItems} />
         </div>

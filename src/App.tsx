@@ -24,14 +24,28 @@ function App() {
     STORAGE_KEYS.selectedBosses,
     []
   );
+  const [prioritizedTilesMap, setPrioritizedTilesMap] = useLocalStorage<Record<string, number>>(
+    STORAGE_KEYS.prioritizedTiles,
+    {}
+  );
   const [view, setView] = useState<ViewMode>(() =>
     window.matchMedia("(max-width: 768px)").matches ? "list" : "board"
   );
   const [activeTile, setActiveTile] = useState<Tile | null>(null);
+  const [flashTileId, setFlashTileId] = useState<string | null>(null);
   const lastClickedTileRef = useRef<HTMLElement | null>(null);
+  const flashTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const completedTileIds = new Set(completedTileIdsArray);
   const completedTiles = tiles.filter((t) => completedTileIds.has(t.id));
+
+  const fullyCompletedBosses = new Set(
+    allBosses.filter((boss) =>
+      tiles
+        .filter((t) => t.relatedBosses.includes(boss))
+        .every((t) => completedTileIds.has(t.id))
+    )
+  );
 
   function toggleTile(id: string) {
     const next = new Set(completedTileIds);
@@ -55,6 +69,30 @@ function App() {
   function resetProgress() {
     if (window.confirm("Reset all progress? This cannot be undone.")) {
       setCompletedTileIdsArray([]);
+    }
+  }
+
+  function setPriority(id: string, priority: number | null) {
+    const next = { ...prioritizedTilesMap };
+    if (priority === null || priority <= 0) {
+      delete next[id];
+    } else {
+      next[id] = priority;
+    }
+    setPrioritizedTilesMap(next);
+  }
+
+  function flashTile(id: string) {
+    if (flashTimeoutRef.current) clearTimeout(flashTimeoutRef.current);
+    setFlashTileId(id);
+    flashTimeoutRef.current = setTimeout(() => setFlashTileId(null), 4000);
+  }
+
+  function handlePriorityClick(tile: Tile) {
+    if (view === "board") {
+      flashTile(tile.id);
+    } else {
+      openTile(tile);
     }
   }
 
@@ -100,16 +138,24 @@ function App() {
           totalTiles={tiles.length}
           allBosses={allBosses}
           selectedBosses={selectedBosses}
+          fullyCompletedBosses={fullyCompletedBosses}
+          prioritizedTilesMap={prioritizedTilesMap}
           view={view}
           onToggleBoss={toggleBoss}
           onClearFilters={clearFilters}
           onResetProgress={resetProgress}
           onViewChange={setView}
           onImport={handleImport}
+          onPriorityClick={handlePriorityClick}
           allTileIds={allTileIds}
           completedTileIdsArray={completedTileIdsArray}
         />
-        <TileModal tile={activeTile} onClose={closeTile} />
+        <TileModal
+          tile={activeTile}
+          priorityNumber={activeTile ? (prioritizedTilesMap[activeTile.id] ?? null) : null}
+          onSetPriority={(p) => activeTile && setPriority(activeTile.id, p)}
+          onClose={closeTile}
+        />
       </>
     );
   }
@@ -123,19 +169,32 @@ function App() {
         selectedBosses={selectedBosses}
         completedTileIds={completedTileIdsArray}
         allTileIds={allTileIds}
+        fullyCompletedBosses={fullyCompletedBosses}
+        prioritizedTilesMap={prioritizedTilesMap}
+        tiles={tiles}
         view={view}
         onToggleBoss={toggleBoss}
         onClearFilters={clearFilters}
         onResetProgress={resetProgress}
         onImport={handleImport}
         onViewChange={setView}
+        onPriorityClick={handlePriorityClick}
       />
       {view === "board" ? (
-        <Board {...sharedBoardProps} />
+        <Board
+          {...sharedBoardProps}
+          prioritizedTilesMap={prioritizedTilesMap}
+          flashTileId={flashTileId}
+        />
       ) : (
         <ListView {...sharedBoardProps} />
       )}
-      <TileModal tile={activeTile} onClose={closeTile} />
+      <TileModal
+        tile={activeTile}
+        priorityNumber={activeTile ? (prioritizedTilesMap[activeTile.id] ?? null) : null}
+        onSetPriority={(p) => activeTile && setPriority(activeTile.id, p)}
+        onClose={closeTile}
+      />
     </div>
   );
 }

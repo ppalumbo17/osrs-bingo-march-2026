@@ -17,4 +17,5 @@ export type LocalState = {
 export const STORAGE_KEYS = {
   completedTiles: "osrs-bingo.completedTiles",
   selectedBosses: "osrs-bingo.selectedBosses",
+  prioritizedTiles: "osrs-bingo.prioritizedTiles",
 } as const;
