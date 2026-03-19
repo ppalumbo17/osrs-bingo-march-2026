@@ -4,7 +4,9 @@ import type { Tile } from "../types";
 
 type TileModalProps = {
   tile: Tile | null;
+  isCompleted: boolean;
   priorityNumber: number | null;
+  onToggleCompleted: () => void;
   onSetPriority: (priority: number | null) => void;
   onClose: () => void;
 };
@@ -19,7 +21,7 @@ function labelFromUrl(url: string): string {
   }
 }
 
-export function TileModal({ tile, priorityNumber, onSetPriority, onClose }: TileModalProps) {
+export function TileModal({ tile, isCompleted, priorityNumber, onToggleCompleted, onSetPriority, onClose }: TileModalProps) {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState("");
@@ -115,14 +117,24 @@ export function TileModal({ tile, priorityNumber, onSetPriority, onClose }: Tile
             <h2 className="modal-title">{tile.content}</h2>
             <span className="modal-points">{tile.points} pts</span>
           </div>
-          <button
-            className="modal-close-btn"
-            ref={closeButtonRef}
-            onClick={onClose}
-            aria-label="Close tile details"
-          >
-            ✕
-          </button>
+          <div className="modal-header-actions">
+            <button
+              className={`modal-complete-btn${isCompleted ? " modal-complete-btn--done" : ""}`}
+              onClick={onToggleCompleted}
+              aria-pressed={isCompleted}
+              aria-label={isCompleted ? "Mark as incomplete" : "Mark as complete"}
+            >
+              {isCompleted ? "✓ Completed" : "Mark Complete"}
+            </button>
+            <button
+              className="modal-close-btn"
+              ref={closeButtonRef}
+              onClick={onClose}
+              aria-label="Close tile details"
+            >
+              ✕
+            </button>
+          </div>
         </div>
 
         <div className="modal-body">

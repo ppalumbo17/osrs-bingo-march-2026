@@ -22,7 +22,7 @@ type SidebarProps = {
   onToggleBoss: (boss: string) => void;
   onClearFilters: () => void;
   onResetProgress: () => void;
-  onImport: (ids: string[]) => void;
+  onImport: (ids: string[], priorities: Record<string, number>) => void;
   onViewChange: (v: ViewMode) => void;
   onPriorityClick: (tile: Tile) => void;
 };
@@ -69,6 +69,7 @@ export function Sidebar({
       <ImportExportControls
         completedTileIds={completedTileIds}
         allTileIds={allTileIds}
+        prioritizedTilesMap={prioritizedTilesMap}
         onImport={onImport}
       />
       <ResetProgressButton onReset={onResetProgress} />

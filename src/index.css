@@ -265,6 +265,7 @@ body {
   right: 4px;
   cursor: pointer;
   line-height: 1;
+  z-index: 2;
 }
 .tile-checkbox input[type="checkbox"] {
   width: 18px;
@@ -339,6 +340,42 @@ body {
   font-size: 12px;
   color: #ffd700;
   font-weight: 600;
+}
+
+.modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.modal-complete-btn {
+  background: transparent;
+  border: 1px solid #3d4a5c;
+  border-radius: 4px;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 10px;
+  height: 28px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.modal-complete-btn:hover {
+  background: rgba(110, 224, 122, 0.1);
+  border-color: #6ee07a;
+  color: #6ee07a;
+}
+.modal-complete-btn--done {
+  background: rgba(110, 224, 122, 0.15);
+  border-color: #6ee07a;
+  color: #6ee07a;
+}
+.modal-complete-btn--done:hover {
+  background: rgba(110, 224, 122, 0.05);
+  border-color: #94a3b8;
+  color: #94a3b8;
 }
 
 .modal-close-btn {
@@ -513,12 +550,20 @@ body {
   gap: 8px;
 }
 
-/* ── Tier section ── */
+/* ── Tier list + section ── */
+.tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .tier-section {
   min-height: 44px;
   border: 1px solid #2d3748;
   border-radius: 6px;
-  overflow: hidden;
 }
 
 .tier-section-header {
@@ -600,8 +645,20 @@ body {
 .mobile-list-view {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   background: var(--page-bg);
+}
+
+/* In mobile, tier lists expand naturally — outer container scrolls */
+.mobile-list-view .tier-tile-list {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Ensure last section items can always be scrolled fully into view */
+.mobile-list-view {
+  padding-bottom: 24px;
 }
 
 .mobile-header {

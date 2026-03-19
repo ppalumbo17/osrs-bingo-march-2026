@@ -96,8 +96,9 @@ function App() {
     }
   }
 
-  function handleImport(ids: string[]) {
+  function handleImport(ids: string[], priorities: Record<string, number>) {
     setCompletedTileIdsArray(ids);
+    setPrioritizedTilesMap(priorities);
   }
 
   function openTile(tile: Tile) {
@@ -152,7 +153,9 @@ function App() {
         />
         <TileModal
           tile={activeTile}
+          isCompleted={activeTile ? completedTileIds.has(activeTile.id) : false}
           priorityNumber={activeTile ? (prioritizedTilesMap[activeTile.id] ?? null) : null}
+          onToggleCompleted={() => activeTile && toggleTile(activeTile.id)}
           onSetPriority={(p) => activeTile && setPriority(activeTile.id, p)}
           onClose={closeTile}
         />
@@ -191,7 +194,9 @@ function App() {
       )}
       <TileModal
         tile={activeTile}
+        isCompleted={activeTile ? completedTileIds.has(activeTile.id) : false}
         priorityNumber={activeTile ? (prioritizedTilesMap[activeTile.id] ?? null) : null}
+        onToggleCompleted={() => activeTile && toggleTile(activeTile.id)}
         onSetPriority={(p) => activeTile && setPriority(activeTile.id, p)}
         onClose={closeTile}
       />

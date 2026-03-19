@@ -30,7 +30,7 @@ export function TierSection({
   const completedCount = tiles.filter((t) => completedTileIds.has(t.id)).length;
 
   return (
-    <div className="tier-section">
+    <li className="tier-section">
       <button
         className="tier-section-header"
         onClick={() => setOpen((o) => !o)}
@@ -92,6 +92,6 @@ export function TierSection({
           })}
         </ul>
       )}
-    </div>
+    </li>
   );
 }

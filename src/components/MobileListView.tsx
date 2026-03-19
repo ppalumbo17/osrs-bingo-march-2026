@@ -45,7 +45,7 @@ type MobileListViewProps = {
   onClearFilters: () => void;
   onResetProgress: () => void;
   onViewChange: (v: ViewMode) => void;
-  onImport: (ids: string[]) => void;
+  onImport: (ids: string[], priorities: Record<string, number>) => void;
   onPriorityClick: (tile: Tile) => void;
   allTileIds: string[];
   completedTileIdsArray: string[];
@@ -90,7 +90,7 @@ export function MobileListView({
     .reduce((sum, { tile }) => sum + tile.points, 0);
 
   function handleCopy() {
-    navigator.clipboard.writeText(JSON.stringify({ completedTileIds: completedTileIdsArray })).then(() => {
+    navigator.clipboard.writeText(JSON.stringify({ completedTileIds: completedTileIdsArray, prioritizedTilesMap })).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
@@ -100,10 +100,18 @@ export function MobileListView({
     try {
       const parsed = JSON.parse(pasteValue);
       if (!Array.isArray(parsed.completedTileIds)) throw new Error();
-      const valid = parsed.completedTileIds.filter(
+      const validIds = parsed.completedTileIds.filter(
         (id: unknown) => typeof id === "string" && allTileIds.includes(id)
       );
-      onImport(valid);
+      const validPriorities: Record<string, number> = {};
+      if (parsed.prioritizedTilesMap && typeof parsed.prioritizedTilesMap === "object") {
+        for (const [id, num] of Object.entries(parsed.prioritizedTilesMap)) {
+          if (typeof id === "string" && allTileIds.includes(id) && typeof num === "number" && num > 0) {
+            validPriorities[id] = num;
+          }
+        }
+      }
+      onImport(validIds, validPriorities);
       setPasteValue(""); setPasteError(""); setPasteOpen(false);
     } catch {
       setPasteError("Invalid format — paste an exported progress string.");
@@ -197,20 +205,22 @@ export function MobileListView({
         </div>
       </Collapsible>
 
-      {TIERS.map((tier) => (
-        <TierSection
-          key={tier.points}
-          label={tier.label}
-          colorVar={tier.colorVar}
-          tiles={tiles.filter((t) => t.points === tier.points)}
-          completedTileIds={completedTileIds}
-          highlightedIds={highlightedIds}
-          hasFilters={hasFilters}
-          onToggleTile={onToggleTile}
-          onTileClick={onTileClick}
-          defaultOpen={false}
-        />
-      ))}
+      <ul className="tier-list">
+        {TIERS.map((tier) => (
+          <TierSection
+            key={tier.points}
+            label={tier.label}
+            colorVar={tier.colorVar}
+            tiles={tiles.filter((t) => t.points === tier.points)}
+            completedTileIds={completedTileIds}
+            highlightedIds={highlightedIds}
+            hasFilters={hasFilters}
+            onToggleTile={onToggleTile}
+            onTileClick={onTileClick}
+            defaultOpen={false}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
