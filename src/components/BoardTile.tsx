@@ -6,6 +6,8 @@ type BoardTileProps = {
   isCompleted: boolean;
   isHighlighted: boolean;
   isDimmed: boolean;
+  isFlashing: boolean;
+  priorityNumber?: number;
   onClick: (tile: Tile) => void;
   onToggle: (id: string) => void;
 };
@@ -23,6 +25,8 @@ export function BoardTile({
   isCompleted,
   isHighlighted,
   isDimmed,
+  isFlashing,
+  priorityNumber,
   onClick,
   onToggle,
 }: BoardTileProps) {
@@ -34,6 +38,7 @@ export function BoardTile({
     isCompleted ? "board-tile--completed" : "",
     isHighlighted ? "board-tile--highlighted" : "",
     isDimmed ? "board-tile--dimmed" : "",
+    isFlashing ? "board-tile--flashing" : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -51,6 +56,11 @@ export function BoardTile({
         if (e.key === "Enter" || e.key === " ") onClick(tile);
       }}
     >
+      {priorityNumber != null && (
+        <span className="tile-priority-badge" aria-label={`Priority ${priorityNumber}`}>
+          {priorityNumber}
+        </span>
+      )}
       <TileCheckbox
         checked={isCompleted}
         tileLabel={tile.content}

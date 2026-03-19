@@ -6,6 +6,8 @@ type BoardProps = {
   completedTileIds: Set<string>;
   highlightedIds: Set<string>;
   hasFilters: boolean;
+  prioritizedTilesMap: Record<string, number>;
+  flashTileId: string | null;
   onToggleTile: (id: string) => void;
   onTileClick: (tile: Tile) => void;
 };
@@ -15,6 +17,8 @@ export function Board({
   completedTileIds,
   highlightedIds,
   hasFilters,
+  prioritizedTilesMap,
+  flashTileId,
   onToggleTile,
   onTileClick,
 }: BoardProps) {
@@ -30,6 +34,8 @@ export function Board({
           isCompleted={completedTileIds.has(tile.id)}
           isHighlighted={hasFilters && highlightedIds.has(tile.id)}
           isDimmed={hasFilters && !highlightedIds.has(tile.id)}
+          isFlashing={flashTileId === tile.id}
+          priorityNumber={prioritizedTilesMap[tile.id]}
           onToggle={onToggleTile}
           onClick={onTileClick}
         />
