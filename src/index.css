@@ -265,6 +265,7 @@ body {
   right: 4px;
   cursor: pointer;
   line-height: 1;
+  z-index: 2;
 }
 .tile-checkbox input[type="checkbox"] {
   width: 18px;
@@ -339,6 +340,42 @@ body {
   font-size: 12px;
   color: #ffd700;
   font-weight: 600;
+}
+
+.modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.modal-complete-btn {
+  background: transparent;
+  border: 1px solid #3d4a5c;
+  border-radius: 4px;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 10px;
+  height: 28px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.modal-complete-btn:hover {
+  background: rgba(110, 224, 122, 0.1);
+  border-color: #6ee07a;
+  color: #6ee07a;
+}
+.modal-complete-btn--done {
+  background: rgba(110, 224, 122, 0.15);
+  border-color: #6ee07a;
+  color: #6ee07a;
+}
+.modal-complete-btn--done:hover {
+  background: rgba(110, 224, 122, 0.05);
+  border-color: #94a3b8;
+  color: #94a3b8;
 }
 
 .modal-close-btn {
@@ -513,12 +550,20 @@ body {
   gap: 8px;
 }
 
-/* ── Tier section ── */
+/* ── Tier list + section ── */
+.tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .tier-section {
   min-height: 44px;
   border: 1px solid #2d3748;
   border-radius: 6px;
-  overflow: hidden;
 }
 
 .tier-section-header {
@@ -600,8 +645,20 @@ body {
 .mobile-list-view {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   background: var(--page-bg);
+}
+
+/* In mobile, tier lists expand naturally — outer container scrolls */
+.mobile-list-view .tier-tile-list {
+  max-height: none;
+  overflow: visible;
+}
+
+/* Ensure last section items can always be scrolled fully into view */
+.mobile-list-view {
+  padding-bottom: 24px;
 }
 
 .mobile-header {
@@ -681,6 +738,183 @@ body {
   font-size: 12px;
   color: #94a3b8;
   text-align: right;
+}
+
+/* ── Priority badge — board tile (top-left) ── */
+.tile-priority-badge {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: var(--tier-legendary);
+  color: #1a1a1a;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  min-width: 14px;
+  height: 14px;
+  padding: 0 2px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Board tile flash animation ── */
+@keyframes tile-flash {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); outline: 2px solid transparent; }
+  50%       { box-shadow: 0 0 10px 4px rgba(251, 191, 36, 0.55); outline: 2px solid var(--tier-legendary); }
+}
+.board-tile--flashing {
+  animation: tile-flash 0.8s ease-in-out 5;
+  z-index: 1;
+}
+
+/* ── Collapsible panel header (BossFilterPanel, PriorityPanel) ── */
+.collapsible-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 0;
+  color: var(--sidebar-text);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.collapsible-panel-header:hover { color: #fff; }
+.collapsible-panel-title { color: inherit; }
+
+/* ── Priority panel ── */
+.priority-panel { margin-bottom: 4px; }
+
+.priority-panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.priority-panel-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  padding: 5px 8px;
+  cursor: pointer;
+  text-align: left;
+  color: var(--sidebar-text);
+  font-size: 12px;
+  transition: background 0.15s;
+}
+.priority-panel-item:hover { background: rgba(255, 255, 255, 0.1); }
+
+.priority-panel-num {
+  flex-shrink: 0;
+  background: var(--tier-legendary);
+  color: #1a1a1a;
+  font-size: 10px;
+  font-weight: 800;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 3px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.priority-panel-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.priority-panel-pts {
+  flex-shrink: 0;
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.priority-panel-item--completed {
+  opacity: 0.35;
+}
+.priority-panel-item--completed .priority-panel-name {
+  text-decoration: line-through;
+}
+
+.priority-panel-header-pts {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--tier-legendary);
+  margin-left: auto;
+  padding-left: 8px;
+}
+
+/* ── Modal priority row ── */
+.modal-priority-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-priority-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.modal-priority-input {
+  width: 70px;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.modal-priority-input:focus {
+  outline: none;
+  border-color: var(--tier-legendary);
+}
+
+.modal-priority-clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #64748b;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: color 0.15s;
+}
+.modal-priority-clear:hover { color: #fff; }
+
+/* ── Completed boss dim ── */
+.boss-btn--completed {
+  opacity: 0.35;
+  text-decoration: line-through;
+}
+.boss-btn--completed.boss-btn--selected {
+  opacity: 0.6;
 }
 
 /* ── Responsive ── */

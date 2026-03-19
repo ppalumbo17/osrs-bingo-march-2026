@@ -21,19 +21,21 @@ export function ListView({
 }: ListViewProps) {
   return (
     <main className="list-view">
-      {TIERS.map((tier) => (
-        <TierSection
-          key={tier.points}
-          label={tier.label}
-          colorVar={tier.colorVar}
-          tiles={tiles.filter((t) => t.points === tier.points)}
-          completedTileIds={completedTileIds}
-          highlightedIds={highlightedIds}
-          hasFilters={hasFilters}
-          onToggleTile={onToggleTile}
-          onTileClick={onTileClick}
-        />
-      ))}
+      <ul className="tier-list">
+        {TIERS.map((tier) => (
+          <TierSection
+            key={tier.points}
+            label={tier.label}
+            colorVar={tier.colorVar}
+            tiles={tiles.filter((t) => t.points === tier.points)}
+            completedTileIds={completedTileIds}
+            highlightedIds={highlightedIds}
+            hasFilters={hasFilters}
+            onToggleTile={onToggleTile}
+            onTileClick={onTileClick}
+          />
+        ))}
+      </ul>
     </main>
   );
 }

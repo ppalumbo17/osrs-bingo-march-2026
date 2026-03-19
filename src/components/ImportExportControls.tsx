@@ -3,12 +3,14 @@ import { useState } from "react";
 type ImportExportControlsProps = {
   completedTileIds: string[];
   allTileIds: string[];
-  onImport: (ids: string[]) => void;
+  prioritizedTilesMap: Record<string, number>;
+  onImport: (ids: string[], priorities: Record<string, number>) => void;
 };
 
 export function ImportExportControls({
   completedTileIds,
   allTileIds,
+  prioritizedTilesMap,
   onImport,
 }: ImportExportControlsProps) {
   const [copied, setCopied] = useState(false);
@@ -17,7 +19,7 @@ export function ImportExportControls({
   const [pasteError, setPasteError] = useState("");
 
   function handleCopy() {
-    const json = JSON.stringify({ completedTileIds });
+    const json = JSON.stringify({ completedTileIds, prioritizedTilesMap });
     navigator.clipboard.writeText(json).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
@@ -28,10 +30,18 @@ export function ImportExportControls({
     try {
       const parsed = JSON.parse(pasteValue);
       if (!Array.isArray(parsed.completedTileIds)) throw new Error();
-      const valid = parsed.completedTileIds.filter(
+      const validIds = parsed.completedTileIds.filter(
         (id: unknown) => typeof id === "string" && allTileIds.includes(id)
       );
-      onImport(valid);
+      const validPriorities: Record<string, number> = {};
+      if (parsed.prioritizedTilesMap && typeof parsed.prioritizedTilesMap === "object") {
+        for (const [id, num] of Object.entries(parsed.prioritizedTilesMap)) {
+          if (typeof id === "string" && allTileIds.includes(id) && typeof num === "number" && num > 0) {
+            validPriorities[id] = num;
+          }
+        }
+      }
+      onImport(validIds, validPriorities);
       setPasteValue("");
       setPasteError("");
       setPasteOpen(false);
